@@ -107,8 +107,8 @@ export default class Login extends React.Component {
                         />
                     </div>
 
-                    <div className="mt-6 flex justify-between items-center">
-                        <Button onClick={this.handleSubmit}>Login</Button>
+                    <div className="mt-6">
+                        <Button onClick={this.handleSubmit} className="w-full">Login</Button>
                     </div>
                 </form>
             </div>
