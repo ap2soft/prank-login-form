@@ -1,0 +1,7 @@
+black
+brown
+pinkman
+potter
+smith
+white
+x

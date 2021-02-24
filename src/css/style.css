@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .backrgound {
+        background-image: url(../img/background.jpg);
+        @apply bg-center bg-no-repeat bg-cover;
+    }
+}
