@@ -52,7 +52,7 @@ export default class Login extends React.Component {
     }
 
     async fetchData(filename) {
-        return (await fetch(`/data/${filename}`).then(response => response.text()))
+        return (await fetch(`https://raw.githubusercontent.com/ap2soft/prank-login-form/main/data/${filename}`).then(response => response.text()))
             .trim()
             .replace(/\r/g, '')
             .split('\n')
