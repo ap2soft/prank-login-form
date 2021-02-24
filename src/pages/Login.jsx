@@ -29,6 +29,8 @@ export default class Login extends React.Component {
         e.preventDefault()
 
         if (this.state.randomEmail && this.state.randomEmail === this.state.email) {
+            this.setState({ hasSuccess: true })
+
             location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 
             return
@@ -75,6 +77,12 @@ export default class Login extends React.Component {
         return (
             <div className="w-full sm:max-w-sm sm:mx-auto bg-white bg-opacity-25 sm:rounded shadow-xl p-10">
                 <h1 className="text-white text-2xl font-bold uppercase tracking-wide text-center">Login</h1>
+
+                {this.state.hasSuccess &&
+                    <div className="mt-4 bg-green-200 bg-opacity-70 text-green-900 leading-tight rounded text-center p-4">
+                        Redirecting to the dashboard...
+                    </div>
+                }
 
                 {this.state.hasErrors &&
                     <div className="mt-4 bg-red-200 bg-opacity-70 text-red-900 leading-tight rounded text-center p-4">
