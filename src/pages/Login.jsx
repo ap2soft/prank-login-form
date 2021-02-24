@@ -8,7 +8,7 @@ export default class Login extends React.Component {
         super(props)
 
         this.state = {
-            email: null,
+            email: '',
             hasErrors: false,
             randomMame: null,
             randomEmail: null,
