@@ -1,7 +1,5 @@
-import { string } from 'prop-types'
 import React from 'react'
 import { render } from 'react-dom'
-import { Link } from 'react-router-dom'
 
 import Button from '../components/Button'
 
