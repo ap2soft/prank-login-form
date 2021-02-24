@@ -9,7 +9,10 @@ export default class Login extends React.Component {
 
         this.state = {
             email: '',
+
             hasErrors: false,
+            hasSuccess: false,
+
             randomMame: null,
             randomEmail: null,
         }
@@ -38,9 +41,7 @@ export default class Login extends React.Component {
 
         await this.randomize()
 
-        this.setState({
-            hasErrors: true
-        })
+        this.setState({ hasErrors: true })
     }
 
     async randomize() {
